@@ -13,7 +13,7 @@
 <body>
   <header class="hero" id="top">
     <nav class="container nav">
-      <a class="brand" href="#top"></a>
+      <a class="brand" href="#top">Roman Valiullin</a>
       <button class="menu-toggle" type="button" aria-label="Открыть меню">Меню</button>
       <ul class="menu">
         <li><a href="#about">Обо мне</a></li>
@@ -25,12 +25,17 @@
     </nav>
 
     <div class="container hero-content">
-      <p class="badge">Инженер-программист</p>
+      <p class="badge">Инженер-программист | Junior+/Middle-</p>
       <h1>Валиуллин Роман Олегович</h1>
       <p class="lead">
-        Разрабатываю веб-решения и техническую документацию. 
-        Люблю наводить порядок в процессах, автоматизировать рутину и делать понятные интерфейсы.
+        Ранее занимался веб-разработкой, внутренней автоматизацией и технической документацией.
+        Сейчас специализируюсь на backend-разработке на C# и развиваюсь в серверной архитектуре.
       </p>
+      <ul class="hero-points">
+        <li>Челябинск, готов к командной работе и ответственности за результат.</li>
+        <li>Текущая роль: ИБ и программно-техническое сопровождение.</li>
+        <li>Быстро встраиваюсь в процессы команды и проектные стандарты.</li>
+      </ul>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">Смотреть работы</a>
         <a class="btn btn-ghost" href="#contact">Связаться</a>
@@ -42,11 +47,16 @@
     <section class="section" id="about">
       <div class="container">
         <h2>Обо мне</h2>
-        <p>
-          Мне 20 лет, живу в Челябинске. Ищу роль инженера-программиста/разработчика.
-          Фокусируюсь на веб-разработке, Python, SQL, TypeScript и C#. 
-          В работе ценю чистую структуру, внимание к деталям и командное взаимодействие.
-        </p>
+        <div class="about-grid">
+          <p>
+            Мне 20 лет, живу в Челябинске. Ищу позицию инженера-программиста/разработчика, где можно
+            развиваться в продакшн-разработке и приносить измеримую пользу команде.
+          </p>
+          <p>
+            Уверенно работаю с Python, SQL, JavaScript/TypeScript, C#, Git и ASP.NET.
+            В приоритете: понятный код, надежность, прозрачная коммуникация и аккуратная документация.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -54,35 +64,94 @@
       <div class="container">
         <div class="section-head">
           <h2>Работы и проекты</h2>
-          <p>Собрал направления, с которыми уже работал на практике.</p>
+          <p>Проекты из GitHub: продакшн, учебные и экспериментальные репозитории.</p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <h3>Техническая документация</h3>
+            <h3>office-portal</h3>
             <p>
-              Создание how-to, инструкций и заметок к релизам. 
-              Актуализация материалов, структурирование контента и проверка документации с QA-подходом.
+              Внутренний офисный портал на C# с фокусом на backend-логику, API и рабочие процессы.
+              Один из основных практических проектов, где прокачивал архитектуру и серверную часть.
             </p>
-            <span class="tag">Tech Writing</span>
+            <span class="tag">C# / Backend</span>
+            <div class="project-links">
+              <a href="https://github.com/f1ght3rx/office-portal" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="#" class="project-link-disabled">Live Demo (после деплоя)</a>
+            </div>
           </article>
 
           <article class="card">
-            <h3>Системная интеграция и процессы</h3>
+            <h3>portfolio</h3>
             <p>
-              Участие в интеграции IT-систем, сбор требований с командами разработки и тестирования, 
-              работа с YouTrack и GitHub в командном процессе.
+              Персональный сайт-портфолио с адаптивной версткой, в котором собираю опыт, стек и проекты.
+              Использую как публичную витрину компетенций и базу для регулярных обновлений.
             </p>
-            <span class="tag">Integration</span>
+            <span class="tag">HTML / CSS / JS</span>
+            <div class="project-links">
+              <a href="https://github.com/f1ght3rx/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="#" class="project-link-disabled">Live Demo (добавим URL)</a>
+            </div>
           </article>
 
           <article class="card">
-            <h3>Веб-разработка</h3>
+            <h3>laravel-shop</h3>
             <p>
-              Практика в JavaScript/TypeScript, ASP.NET, SQL и Python.
-              Делаю интерфейсы, логическую структуру страниц и базовую автоматизацию процессов.
+              Учебный проект интернет-магазина на Laravel/PHP, который разрабатываем в рамках курса.
+              Отрабатываю базовую e-commerce логику, структуру проекта и backend-функциональность.
             </p>
-            <span class="tag">Web</span>
+            <span class="tag">PHP / Laravel</span>
+            <div class="project-links">
+              <a href="https://github.com/f1ght3rx/laravel-shop" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="#" class="project-link-disabled">Live Demo (после деплоя)</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>laravel_bd</h3>
+            <p>
+              Собственный проект на Laravel/PHP, который веду самостоятельно.
+              Использую для проверки архитектурных идей и практики backend-разработки.
+            </p>
+            <span class="tag">PHP / Practice</span>
+            <div class="project-links">
+              <a href="https://github.com/f1ght3rx/laravel_bd" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="#" class="project-link-disabled">Live Demo (после деплоя)</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>discord-documentation</h3>
+            <p>
+              Проект документации в HTML-формате: структурирование материалов, оформление и навигация.
+              Отдельно показывает мой опыт в техническом писательстве.
+            </p>
+            <span class="tag">Documentation / HTML</span>
+            <div class="project-links">
+              <a href="https://github.com/f1ght3rx/discord-documentation" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://discord-documentation.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="value">
+      <div class="container">
+        <h2>Что могу дать команде</h2>
+        <div class="value-grid">
+          <article class="value-item">
+            <h3>Быстрое погружение</h3>
+            <p>Оперативно разбираюсь в предметной области, текущем коде и рабочих процессах.</p>
+          </article>
+          <article class="value-item">
+            <h3>Системный подход</h3>
+            <p>Держу в фокусе не только задачу, но и влияние на продукт, пользователей и поддержку.</p>
+          </article>
+          <article class="value-item">
+            <h3>Командная коммуникация</h3>
+            <p>Понятно фиксирую решения, корректно обсуждаю риски и довожу задачи до результата.</p>
           </article>
         </div>
       </div>
@@ -131,6 +200,8 @@
           <span>ASP.NET</span>
           <span>Git / GitHub</span>
           <span>YouTrack</span>
+          <span>Информационная безопасность</span>
+          <span>Поддержка инфраструктуры</span>
           <span>Web-разработка</span>
           <span>Техническая документация</span>
         </div>
@@ -153,14 +224,18 @@
     <section class="section section-contact" id="contact">
       <div class="container">
         <h2>Контакты</h2>
+        <p class="contact-lead">
+          Открыт к предложениям по роли инженера-программиста/разработчика.
+          Готов обсудить формат сотрудничества и тестовое задание.
+        </p>
         <div class="contact-grid">
           <a href="tel:+79049755207">+7 (904) 975-52-07</a>
           <a href="mailto:roman@example.com">23300362@live.inueco.ru</a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/right3zx" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a>
         </div>
         <p class="hint">
-          Обнови email, GitHub и Telegram на свои реальные ссылки перед публикацией.
+          Telegram обнови на свою прямую ссылку профиля, чтобы работодателю было проще написать.
         </p>
       </div>
     </section>

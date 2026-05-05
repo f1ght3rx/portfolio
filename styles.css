@@ -118,6 +118,16 @@ h3 {
   font-size: 1.05rem;
 }
 
+.hero-points {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.hero-points li {
+  margin-bottom: 0.3rem;
+}
+
 .hero-actions {
   display: flex;
   gap: 0.8rem;
@@ -163,6 +173,12 @@ h3 {
   color: var(--muted);
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -183,6 +199,24 @@ h3 {
   color: var(--primary);
 }
 
+.project-links {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-links a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.85rem;
+}
+
+.project-link-disabled {
+  color: var(--muted);
+}
+
 .timeline {
   border-left: 2px solid var(--line);
   padding-left: 1rem;
@@ -197,6 +231,23 @@ h3 {
   margin: 0.2rem 0 0.4rem;
   font-weight: 600;
   color: var(--text);
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.value-item {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.value-item p {
+  margin-bottom: 0;
 }
 
 .chips {
@@ -232,6 +283,10 @@ h3 {
   text-align: center;
 }
 
+.contact-lead {
+  max-width: 700px;
+}
+
 .hint {
   font-size: 0.92rem;
 }
@@ -244,6 +299,11 @@ h3 {
 
 @media (max-width: 840px) {
   .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid,
+  .value-grid {
     grid-template-columns: 1fr;
   }
 
